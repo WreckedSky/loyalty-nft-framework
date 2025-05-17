@@ -1,0 +1,17 @@
+.env
+node_modules/
+package-lock.json
+package.json
+
+server/node_modules/
+server/package-lock.json
+server/package.json
+
+contract/artifacts/
+contract/cache/
+contract/node_modules/
+contract/package-lock.json
+contract/package.json
+contract/.gitignore
+contract/README.md
+

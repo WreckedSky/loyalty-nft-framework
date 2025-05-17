@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <h1>Welcome</h1>
+  
+  <!-- NFT Status section -->
+  <div id="nft-status">
+    <h2>NFT Status</h2>
+    <p id="nft-message">Loading NFT information...</p>
+    <div id="nft-details" style="display: none;">
+      <p>Token ID: <span id="token-id"></span></p>
+      <p>Points: <span id="token-points"></span></p>
+    </div>
+    <div id="nft-error" style="display: none; color: #dd6655; font-style: italic; margin-top: 10px;">
+      <p>Note: <span id="error-message"></span></p>
+    </div>
+  </div>
+
+  <button id="mint-btn">Request Mint NFT</button>
+  <button id="pay-btn">Make Payment</button>
+  <button id="test-payment-btn" style="background-color: #ffcc00; margin-top: 20px;">
+    Simulate Payment (Dev Only)
+  </button>
+  <button id="refresh-btn" style="background-color: #55aa77; margin-top: 20px;">
+    Refresh NFT Status
+  </button>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="js/user.js"></script>
+</body>
+</html>
